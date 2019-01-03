@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UI tests" verbose="1" parallel="tests" thread-count="1"
+	group-by-instances="true">
+	<test name="Sample tests">
+		<classes>
+			<class name="com.practice.tests.PetTest" />
+			<class name="com.practice.tests.MaximumTest" />
+			<class name="com.practice.tests.TestClass" />
+			<class name="com.practice.tests.WeatherApiTest" />
+			<class name="com.practice.tests.WebTest" />
+		</classes>
+	</test>
+</suite>

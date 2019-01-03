@@ -1,0 +1,56 @@
+package com.practice.utils;
+
+public abstract class HttpConstants {
+
+	public static final String BASE_URI = "baseURI";
+	public static final String BASE_PATH  = "basePath";
+	public static final int RESPONSE_CODE_200 = 200;
+	public static final int RESPONSE_CODE_201 = 201;
+	public static final int RESPONSE_CODE_202 = 202;
+	public static final int RESPONSE_CODE_203 = 203;
+	public static final int RESPONSE_CODE_204 = 204;
+	public static final int RESPONSE_CODE_205 = 205;
+	public static final int RESPONSE_CODE_206 = 206;
+	public static final int RESPONSE_CODE_207 = 207;
+	public static final int RESPONSE_CODE_208 = 208;
+	public static final int RESPONSE_CODE_226 = 226;
+	public static final int RESPONSE_CODE_400 = 400;
+	public static final int RESPONSE_CODE_401 = 401;
+	public static final int RESPONSE_CODE_402 = 402;
+	public static final int RESPONSE_CODE_403 = 403;
+	public static final int RESPONSE_CODE_404 = 404;
+	public static final int RESPONSE_CODE_405 = 405;
+	public static final int RESPONSE_CODE_406 = 406;
+	public static final int RESPONSE_CODE_407 = 407;
+	public static final int RESPONSE_CODE_408 = 408;
+	public static final int RESPONSE_CODE_409 = 409;
+	public static final int RESPONSE_CODE_410 = 410;
+	public static final int RESPONSE_CODE_411 = 411;
+	public static final int RESPONSE_CODE_412 = 412;
+	public static final int RESPONSE_CODE_413 = 413;
+	public static final int RESPONSE_CODE_414 = 414;
+	public static final int RESPONSE_CODE_415 = 415;
+	public static final int RESPONSE_CODE_416 = 416;
+	public static final int RESPONSE_CODE_417 = 417;
+	public static final int RESPONSE_CODE_418 = 418;
+	public static final int RESPONSE_CODE_421 = 421;
+	public static final int RESPONSE_CODE_422 = 422;
+	public static final int RESPONSE_CODE_423 = 423;
+	public static final int RESPONSE_CODE_424 = 424;
+	public static final int RESPONSE_CODE_426 = 426;
+	public static final int RESPONSE_CODE_428 = 428;
+	public static final int RESPONSE_CODE_431 = 431;
+	public static final int RESPONSE_CODE_451 = 451;
+	public static final int RESPONSE_CODE_500 = 500;
+	public static final int RESPONSE_CODE_501 = 501;
+	public static final int RESPONSE_CODE_502 = 502;
+	public static final int RESPONSE_CODE_503 = 503;
+	public static final int RESPONSE_CODE_504 = 504;
+	public static final int RESPONSE_CODE_505 = 505;
+	public static final int RESPONSE_CODE_506 = 506;
+	public static final int RESPONSE_CODE_507 = 507;
+	public static final int RESPONSE_CODE_508 = 508;
+	public static final int RESPONSE_CODE_509 = 509;
+	public static final int RESPONSE_CODE_510 = 510;
+	public static final int RESPONSE_CODE_511 = 511;
+}
