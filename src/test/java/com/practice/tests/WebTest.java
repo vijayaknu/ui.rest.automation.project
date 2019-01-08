@@ -8,9 +8,9 @@ public class WebTest extends BaseAbstractTest{
 
 	//@Test
 	public void loginTest() {
-		driver.get("https://demo.actitime.com");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.close();
+		getInstanceDriver().get("https://demo.actitime.com");
+		getInstanceDriver().manage().window().maximize();
+		getInstanceDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getInstanceDriver().close();
 	}
 }

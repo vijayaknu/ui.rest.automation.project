@@ -13,21 +13,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.practice.utils.AbstractDriver;
 import com.practice.utils.Utility;
 import io.restassured.RestAssured;
 
-public abstract class BaseAbstractTest {
+public abstract class BaseAbstractTest extends AbstractDriver {
 	
-	WebDriver driver;
+	//protected final AbstractDriver baseDriver = new AbstractDriver();
 	
 	@BeforeSuite
 	public void setup() {
 		RestAssured.baseURI = Utility.getProperty("baseURI");
 		RestAssured.basePath = Utility.getProperty("basePath");
 		//System.out.println("At Before Suite");
-/*		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-		driver = new ChromeDriver();
-*/	}
+	}
 	
 	@AfterSuite
 	public void sendEmail() {
