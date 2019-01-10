@@ -17,6 +17,7 @@ public class SalesforceLoginTest extends BaseAbstractTest {
 		waitUntilSpinnersDisappeared();
 		waitUntilRequestsHaveFinished();
 		getInstanceDriver().findElement(By.linkText("Accounts")).click();
+		
 		waitUntilSpinnersDisappeared();
 		//waitUntilRequestsHaveFinished();
 		getInstanceDriver().close();

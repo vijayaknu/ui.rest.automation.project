@@ -37,7 +37,7 @@ public abstract class AbstractDriver {
 	}
 
 	public static JavascriptExecutor getJavaScriptExecutor() {
-		return ((JavascriptExecutor) getInstanceDriver());
+		return (JavascriptExecutor) getInstanceDriver();
 	}
 
 	private static WebDriver getInstanceDriverObject() {
