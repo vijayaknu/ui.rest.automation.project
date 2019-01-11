@@ -17,10 +17,10 @@ public abstract class AbstractDriver {
 	private static JavascriptExecutor jse;
 
 	public AbstractDriver() {
-		startNewInstance();
+		//startNewInstance();
 	}
 
-	private static void startNewInstance() {
+	public static void startNewInstance() {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		jse = (JavascriptExecutor) driver;

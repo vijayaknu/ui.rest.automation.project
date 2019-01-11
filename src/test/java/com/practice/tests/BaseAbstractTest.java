@@ -26,6 +26,7 @@ public abstract class BaseAbstractTest extends AbstractDriver {
 		RestAssured.baseURI = Utility.getProperty("baseURI");
 		RestAssured.basePath = Utility.getProperty("basePath");
 		//System.out.println("At Before Suite");
+		AbstractDriver.startNewInstance();
 	}
 	
 	@AfterSuite
