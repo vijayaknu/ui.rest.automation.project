@@ -8,6 +8,7 @@
       <class name="com.practice.tests.TestClass"/>
       <class name="com.practice.tests.WeatherApiTest"/>
       <class name="com.practice.tests.WebTest"/>
+      <class name="com.practice.tests.AngularWebDriverTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
