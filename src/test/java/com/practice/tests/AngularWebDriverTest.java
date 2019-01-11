@@ -16,12 +16,13 @@ import com.paulhammant.ngwebdriver.ByAngularRepeater;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 import com.practice.utils.ByCustomAngular;
 
-public class AngularWebDriver {
+public class AngularWebDriverTest {
 
 	static WebDriver driver;
 	static NgWebDriver ngdriver;
 
-	public static void main(String[] args) throws InterruptedException{
+	@Test
+	public void testAngularPages() throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
