@@ -1,5 +1,6 @@
 package com.practice.tests;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -77,8 +78,16 @@ public class AngularWebDriver {
 		driver.findElement(ByAngular.model("formData.email")).sendKeys("Murthy@abcmail.com");
 		driver.findElement(By.partialLinkText("Next Section")).click();
 		ngdriver.waitForAngularRequestsToFinish();	
-		driver.findElements(By.xpath("//label[input[@ng-model='formData.type']]")).stream().forEach(o -> System.out.println(o.getAttribute("text")));
-		driver.findElements(By.xpath("//label[input[@ng-model='formData.type']]")).stream().filter(o -> o.getText().contains("XBOX")).findFirst().get().click();
+		//driver.findElements(By.xpath("//input")).get(0).click();
+		driver.findElements(ByAngular.model("formData.type")).stream().filter(o -> o.getAttribute("value").contains("xbox")).findFirst().get().click();;
+		driver.findElement(By.partialLinkText("Next Section")).click();
+		ngdriver.waitForAngularRequestsToFinish();	
+		driver.findElement(By.xpath("//button[text()='Submit']")).click();
+		//ngdriver.waitForAngularRequestsToFinish();	
+		
+		Alert alrt = driver.switchTo().alert();
+		System.out.println("Alert text is "+alrt.getText());
+		alrt.accept();
 		driver.quit();
 
 	}
