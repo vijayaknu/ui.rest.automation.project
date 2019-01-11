@@ -4,6 +4,11 @@
   <test thread-count="5" name="Test" group-by-instances="true">
     <classes>
       <class name="com.practice.tests.PetTest"/>
+      <class name="com.practice.tests.MaximumTest"/>
+      <class name="com.practice.tests.TestClass"/>
+      <class name="com.practice.tests.WeatherApiTest"/>
+      <class name="com.practice.tests.WebTest"/>
+      <class name="com.practice.tests.AngularWebDriverTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
